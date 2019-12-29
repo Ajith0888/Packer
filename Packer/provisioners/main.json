@@ -1,4 +1,3 @@
-//To Do: install apache tomcat 8 & jenkins on rhel,opensuse & ubuntu
 {
     "variables": {
       "aws_access_key": "",
@@ -22,12 +21,7 @@
       "provisioners": [
           {
                  "type": "shell",
-                 "script": "{{ user `script_name` }}"
-                 //"inline": [
-                 //   "sudo apt-get update",
-                 //   "sudo apt-get install nginx -y",
-                 //   "sudo systemctl enable nginx"
-                 // ]              
+                 "script": "{{ user `script_name` }}"                 
           }
       ]
     }
