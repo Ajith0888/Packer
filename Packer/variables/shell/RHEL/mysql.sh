@@ -1,5 +1,6 @@
 #!/bin/bash
-#This script is helps to install MySQL on Suse
+#This script is helps to install MySQL on RHEL
+sleep 300
 sudo yum update -y
 sudo yum -y install @mysql
 sudo fallocate -l 1g /mnt/1GiB.swap
