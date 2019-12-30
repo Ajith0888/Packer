@@ -3,5 +3,6 @@
     "aws_secret_key": "",
     "aws_region": "eu-central-1",
     "aws_ami_id": "ami-0cc0a36f626a4fdf5",
-    "aws_username": "ubuntu"
+    "aws_username": "ubuntu",
+    "ami_name": "Packer_AWS_Provisioners_For_Ubuntu_{{timestamp}}"
   }
