@@ -4,7 +4,8 @@
       "aws_secret_key": "",
       "aws_region": "eu-central-1",
       "aws_ami_id": "ami-0cc0a36f626a4fdf5",
-      "aws_username": "ubuntu"
+      "aws_username": "ubuntu",
+       "ami_name":"packer_AWS_with_provisioners {{timestamp}}"
     },  
     "builders": [
         {
@@ -15,7 +16,7 @@
           "source_ami": "{{ user `aws_ami_id` }}",
           "instance_type": "t2.micro",
           "ssh_username": "{{ user `aws_username` }}",
-          "ami_name": "packer_AWS_with_provisioners {{timestamp}}"
+          "ami_name": "{{ user `ami_name` }}"
         }
       ],
       "provisioners": [
